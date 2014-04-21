@@ -1,0 +1,28 @@
+from setuptools import setup, find_packages
+
+setup(name='docker-registry',
+      version='1.0',
+      description='Docker Registry',
+      packages=find_packages(),
+      zip_safe=False,
+      include_package_data=True,
+      install_requires=[
+        'boto==2.27.0',
+        'backports.lzma==0.0.2',
+        'Flask==0.9',
+        'PyYAML==3.10',
+        'simplejson==3.1.3',
+        'requests==1.2.0',
+        'gunicorn==18.0',
+        'gevent==0.13.8',
+        'blinker==1.3',
+        'python-glanceclient==0.10.0',
+        'python-keystoneclient==0.3.1',
+        'python-swiftclient==1.8.0',
+        'redis==2.8.0',
+        'rsa==3.1.2',
+        'sqlalchemy==0.9.2',
+        'bugsnag==1.3.1',
+        'gcs-oauth2-boto-plugin>=1.3',
+      ],
+      platforms=["any"])
